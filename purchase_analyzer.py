@@ -37,10 +37,8 @@ def saving_errors(path):
             try:
                 price = float(part[3])
                 qty = int(part[4])
-
                 if price < 0 or qty < 0:
                     bad.append(original)
-
             except:
                 bad.append(original)
     return bad
@@ -106,6 +104,7 @@ def write_report(purchases, errors, out_path):
         for s in top_n_expensive(purchases, 3):
             total = s['price'] * s['qty']
             f.write(f'  {s['date']} {s['category']} {s['name']} {total}\n')
+
 
 
 
