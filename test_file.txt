@@ -1,0 +1,12 @@
+2025-10-01;food;Apple;1.5;2
+2025-10-01;clothes;Shoes;30;extra
+2025-10-01;other;Phone;1000;1
+
+2025-10-02;other;Pen;0.60;5.6
+2025-10-03;food;Bread;2.0;3
+2025-10-04;home;Bed;1.90;
+2025-10-05;clothes;Shirt;25.0;2
+
+2023-10-05;food;Milk;1.0;-3
+2025-10-05;food;Bananas;1.10;3
+2025-10-06;transport;Taxi;ten;1
