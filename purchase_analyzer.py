@@ -1,6 +1,5 @@
 def read_purchases(path):
     purchases = []
-    m = []
     with open(path, 'r',  encoding='utf-8') as f:
         for string in f:
             string = string.strip()
@@ -107,6 +106,7 @@ def write_report(purchases, errors, out_path):
         for s in top_n_expensive(purchases, 3):
             total = s['price'] * s['qty']
             f.write(f'  {s['date']} {s['category']} {s['name']} {total}\n')
+
 
 
 
