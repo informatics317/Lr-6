@@ -86,7 +86,7 @@ def total(purchase):
     return purchase['price'] * purchase['qty']
 
 def top_n_expensive(purchases, n=3):
-    sorted_purchases = sorted(purchases, key=total, reverse=1)
+    sorted_purchases = sorted(purchases, key=total, reverse = True)
     return sorted_purchases[:n]
 
 
@@ -104,6 +104,7 @@ def write_report(purchases, errors, out_path):
         for s in top_n_expensive(purchases, 3):
             total = s['price'] * s['qty']
             f.write(f'  {s['date']} {s['category']} {s['name']} {total}\n')
+
 
 
 
